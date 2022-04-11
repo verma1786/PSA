@@ -1,0 +1,65 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: PSA-GATEWAY-SERVICE
+  cloud:
+    gateway:
+      routes:
+        - id: PSA-MASTER-SERVICE
+          uri: lb://PSA-MASTER-SERVICE
+          predicates:
+            - Path=/psa-master/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: PSA-MASTER-SERVICE
+                fallbackUri: forword/masterService
+
+        - id: PSA-COMMUNITY-SERVICE
+          uri: lb://PSA-COMMUNITY-SERVICE
+          predicates:
+            - Path=/psa-community/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: PSA-COMMUNITY-SERVICE
+                fallbackUri: forword/communityService
+
+        - id: PSA-FILE-SERVICE
+          uri: lb://PSA-FILE-SERVICE
+          predicates:
+            - Path=/psa-file/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: PSA-FILE-SERVICE
+                fallbackUri: forword/fileService
+
+
+
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutinmilliseconds: 5000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - hystrix.stream
+
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://10.68.238.4:8761/eureka/
+
