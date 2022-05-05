@@ -1,7 +1,7 @@
-package com.state.psa.character.handler;
+package com.state.psa.lost.exception;
 
-import com.state.psa.character.exception.*;
-import com.state.psa.character.model.ApiResponse;
+
+import com.state.psa.lost.model.ApiResponse;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.MessageSource;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import javax.validation.ConstraintViolationException;
@@ -21,6 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
+
 
 /**
  * This class handle all global exception
@@ -106,7 +106,53 @@ public class CustomErrorHandler extends ResponseEntityExceptionHandler {
         log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
         return new ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+    /**
+     * handle all json processing exception hierarchy
+     */
+    @ExceptionHandler({JsonProcessingException.class})
+    public final ResponseEntity<Object> handleJsonProcessingException(Exception ex, WebRequest request) {
+        ApiResponse errorResponse = ApiResponse.builder()
+                .status(String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR.value()))
+                .message(ex.getMessage())
+                .errors(Arrays.asList(ex.getLocalizedMessage()))
+                .build();
+        log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
+        return new ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 
+    /**
+     * handle http media type exception hierarchy
+     */
+
+    @ExceptionHandler({HttpMediaTypeNotSupportedException.class})
+    public final ResponseEntity<Object> handleHttpMediaTypeNotSupportedException(Exception ex, WebRequest request) {
+        ApiResponse errorResponse = ApiResponse.builder()
+                .status(String.valueOf(HttpStatus.UNSUPPORTED_MEDIA_TYPE.value()))
+                .message(ex.getMessage())
+                .errors(Arrays.asList(ex.getLocalizedMessage()))
+                .build();
+        log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
+        return new ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    /**
+     * handle http client exception hierarchy
+     */
+
+    @ExceptionHandler({HttpClientErrorException.class})
+    public final ResponseEntity<Object> handleHttpClientErrorException(Exception ex, WebRequest request) {
+        ApiResponse errorResponse = ApiResponse.builder()
+                .status(String.valueOf(HttpStatus.BAD_REQUEST.value()))
+                .message(ex.getMessage())
+                .errors(Arrays.asList(ex.getLocalizedMessage()))
+                .build();
+        log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
+        return new ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    /**
+     * handle arg not valid exception
+     */
 
     private List<String> getErrors(MethodArgumentNotValidException ex) {
         return ex.getBindingResult()
@@ -114,35 +160,5 @@ public class CustomErrorHandler extends ResponseEntityExceptionHandler {
                 .stream()
                 .map(DefaultMessageSourceResolvable::getDefaultMessage)
                 .collect(Collectors.toList());
-    }
-
-    @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
-    public final ResponseEntity<Object>   handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex){
-            ApiResponse errorResponse = ApiResponse.builder()
-                    .status(String.valueOf(HttpStatus.METHOD_NOT_ALLOWED.value()))
-                    .message(ex.getMessage())
-                    .errors(Arrays.asList(ex.getLocalizedMessage()))
-                    .build();
-            log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
-            return new ResponseEntity(errorResponse, HttpStatus.METHOD_NOT_ALLOWED);
-    }
-
-   /* @ExceptionHandler({ ConstraintViolationException.class })
-    public ResponseEntity<Object> handleConstraintViolation(ConstraintViolationException ex, WebRequest request) {
-        List<String> errors = new ArrayList<>();
-        for (ConstraintViolation<?> violation : ex.getConstraintViolations()) {
-            errors.add(violation.getRootBeanClass().getName() + " " +
-                    violation.getPropertyPath() + ": " + violation.getMessage());
-        }
-        ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
-        return new ResponseEntity<Object>(apiError, new HttpHeaders(), apiError.getStatus());
-    }*/
-
-    @ExceptionHandler({ MethodArgumentTypeMismatchException.class })
-    public ResponseEntity<Object> handleMethodArgumentTypeMismatch(MethodArgumentTypeMismatchException ex, WebRequest request) {
-        String error = ex.getName() + " should be of type " + ex.getRequiredType().getName();
-        ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), error);
-        return new ResponseEntity<Object>(
-                apiError, new HttpHeaders(), apiError.getStatus());
     }
 }

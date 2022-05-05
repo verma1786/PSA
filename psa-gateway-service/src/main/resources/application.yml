@@ -37,6 +37,15 @@ spring:
                 name: PSA-FILE-SERVICE
                 fallbackUri: forword/fileService
 
+        - id: PSA-TEST-SERVICE
+          uri: lb://PSA-TEST-SERVICE
+          predicates:
+            - Path=/api/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: PSA-TEST-SERVICE
+                fallbackUri: forword/testService
 
 
 

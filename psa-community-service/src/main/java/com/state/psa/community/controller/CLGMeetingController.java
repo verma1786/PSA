@@ -2,9 +2,7 @@ package com.state.psa.community.controller;
 
 import com.state.psa.community.model.dto.response.ApiResponse;
 import com.state.psa.community.model.entity.CLGMeetingDetails;
-import com.state.psa.community.model.entity.CLGMemberDetails;
 import com.state.psa.community.service.CLGMeetingService;
-import com.state.psa.community.service.CLGMemberService;
 import com.state.psa.community.utils.Constants;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

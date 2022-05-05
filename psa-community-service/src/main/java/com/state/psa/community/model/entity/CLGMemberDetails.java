@@ -3,7 +3,9 @@ package com.state.psa.community.model.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.state.psa.community.config.generators.StringPrefixedSequenceIdGenerator;
 import lombok.*;
+import org.hibernate.annotations.GenericGenerator;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
@@ -27,8 +29,10 @@ public class CLGMemberDetails implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "T_PSA_SEQUENCE")
     @TableGenerator(name="T_PSA_SEQUENCE", table="T_PSA_SEQUENCE", schema="psa_state_db",allocationSize = 1)
+
     @Column(name = "clg_cd", updatable = false,unique=true, nullable=false)
     protected Long id;
+
 
     @Column(name="person_name", length = 100, nullable = true, unique = false)
     @NotBlank(message = "{person.name.notBlank}")
@@ -67,7 +71,7 @@ public class CLGMemberDetails implements Serializable {
     private Integer psId;
     @Column(name="ps")
     private String ps;
-    @JsonProperty
+    @Transient
     private byte[] file;
     @Column(name="city")
     private String city;
@@ -79,6 +83,8 @@ public class CLGMemberDetails implements Serializable {
     private String details;
     @Column(name="file_id")
     private String fileId;
+    @Column(name="file_ref_id")
+    private String fileRefId;
     @Column(name="till_date")
     private Date  tillDate;
     @Column(name="type_cd")

@@ -68,7 +68,7 @@ public class CustomErrorHandler extends ResponseEntityExceptionHandler {
     /**
      * handle validation
      */
-    @ExceptionHandler({com.state.psa.community.exception.ValidationError.class, ConstraintViolationException.class})
+    @ExceptionHandler({ValidationError.class, ConstraintViolationException.class})
     public final ResponseEntity<Object> handleValidation(Exception ex, WebRequest request) {
         ApiResponse errorResponse = ApiResponse.builder()
                 .status(String.valueOf(HttpStatus.BAD_REQUEST))
@@ -82,7 +82,7 @@ public class CustomErrorHandler extends ResponseEntityExceptionHandler {
     /**
      * handle server error
      */
-    @ExceptionHandler({com.state.psa.community.exception.InternalServiceError.class})
+    @ExceptionHandler({InternalServiceError.class})
     public final ResponseEntity<Object> handleServerError(Exception ex, WebRequest request) {
         ApiResponse errorResponse = ApiResponse.builder()
                 .status(String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR))
@@ -100,6 +100,40 @@ public class CustomErrorHandler extends ResponseEntityExceptionHandler {
     public final ResponseEntity<Object> handleAuthError(Exception ex, WebRequest request) {
         ApiResponse errorResponse = ApiResponse.builder()
                 .status(String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR.value()))
+                .message(ex.getMessage())
+                .errors(Arrays.asList(ex.getLocalizedMessage()))
+                .build();
+        log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
+        return new ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+    /**
+     * handle all exception hierarchy
+     */
+    @ExceptionHandler({JsonProcessingException.class})
+    public final ResponseEntity<Object> handleJsonProcessingException(Exception ex, WebRequest request) {
+        ApiResponse errorResponse = ApiResponse.builder()
+                .status(String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR.value()))
+                .message(ex.getMessage())
+                .errors(Arrays.asList(ex.getLocalizedMessage()))
+                .build();
+        log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
+        return new ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+    @ExceptionHandler({HttpMediaTypeNotSupportedException.class})
+    public final ResponseEntity<Object> handleHttpMediaTypeNotSupportedException(Exception ex, WebRequest request) {
+        ApiResponse errorResponse = ApiResponse.builder()
+                .status(String.valueOf(HttpStatus.UNSUPPORTED_MEDIA_TYPE.value()))
+                .message(ex.getMessage())
+                .errors(Arrays.asList(ex.getLocalizedMessage()))
+                .build();
+        log.error("[CustomErrorHandler.handleAllExceptions] : error response {}", errorResponse);
+        return new ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler({HttpClientErrorException.class})
+    public final ResponseEntity<Object> handleHttpClientErrorException(Exception ex, WebRequest request) {
+        ApiResponse errorResponse = ApiResponse.builder()
+                .status(String.valueOf(HttpStatus.BAD_REQUEST.value()))
                 .message(ex.getMessage())
                 .errors(Arrays.asList(ex.getLocalizedMessage()))
                 .build();
