@@ -12,6 +12,7 @@ import java.io.Serializable;
 @ToString
 @Data
 public class LoadFile implements Serializable {
+    private String fileId;
     private String fileName;
     private String fileType;
     private String fileSize;

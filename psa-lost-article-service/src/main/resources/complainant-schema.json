@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "$id": "http://complainant-api.com/schemas/complainant-schema.json",
+  "type": "object",
+  "title": "Complaint of lost article",
+  "description": "Complaint information",
+  "additionalProperties": true,
+  "required": ["complainantName", "aadhaarUIDNo", "bhamashahCardNo", "genderId", "articles"],
+  "properties": {
+    "complainantName": {
+      "type": "string",
+      "maxLength": 50,
+      "description": "Name of the complainant"
+    },
+    "aadhaarUIDNo": {
+      "type": "string",
+      "maxLength": 12,
+      "description": "Aadhaar UID number of the complainant"
+    },
+    "bhamashahCardNo": {
+      "type": ["string", "null"],
+      "description": "Bhamashah card number of the complainant"
+    },
+    "genderId": {
+      "type": "number",
+      "description": "Gender Id of the complainant"
+    },
+    "articles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/tag" }
+    }
+  },
+  "$defs": {
+    "tag": {
+      "type": "object",
+      "title": "Lost article item",
+      "description": "Describes the lost article item",
+      "additionalProperties": true,
+      "required": ["lostArticleTypeId", "lostArticle", "description"],
+      "properties": {
+        "lostArticleTypeId": {
+          "type": "number",
+          "description": "Lost Article type id",
+          "minimum": 0
+        },
+        "lostArticle": {
+          "type": "string",
+          "description": "Height of the product",
+          "maxLength": 50
+        },
+        "description": {
+          "type": "string",
+          "description": "Description the lost article",
+          "maxLength": 500
+        }
+      }
+    }
+  }
+}

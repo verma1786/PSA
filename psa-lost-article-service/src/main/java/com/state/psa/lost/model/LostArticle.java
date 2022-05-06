@@ -1,6 +1,7 @@
 package com.state.psa.lost.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
@@ -18,8 +19,8 @@ public class LostArticle implements Serializable {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="LOST_ARTICLE_ID" ,length=20 ,nullable = false,unique = true)
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "T_PSA_SEQUENCE")
+    @TableGenerator(name="T_PSA_SEQUENCE", table="T_PSA_SEQUENCE", schema="psa_state_lost_db",allocationSize = 1)
     private Long articleId;
 
     @Column(name="LOST_ARTICLE_TYPE_ID" ,length=11 ,nullable = false)
@@ -29,11 +30,12 @@ public class LostArticle implements Serializable {
     @Column(name="LOST_DESCRIPTION" ,length=500,nullable = false)
     private String description;
 
-//    @Column(name="COMPLAINANT_ID" ,length=20 ,nullable = false)
-//    private Long complainantId;
-//    @ManyToOne
-//    @JoinColumn(name="COMPLAINANT_ID", nullable=false)
-//    private ComplainantDetail complainantDetail;
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "COMPLAINANT_ID", referencedColumnName = "complainantId")
+    @JsonIgnoreProperties("articles")
+    private ComplainantDetail complainantDetail;
+
+
 
 
 }

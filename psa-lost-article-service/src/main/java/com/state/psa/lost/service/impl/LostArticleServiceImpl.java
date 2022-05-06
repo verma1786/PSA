@@ -1,6 +1,6 @@
 package com.state.psa.lost.service.impl;
 
-import com.state.psa.lost.exception.ResourceNotFoundException;
+import com.state.psa.lost.common.exception.ResourceNotFoundException;
 import com.state.psa.lost.model.LostArticle;
 import com.state.psa.lost.repository.LostArticleRepository;
 import com.state.psa.lost.service.ILostArticleService;

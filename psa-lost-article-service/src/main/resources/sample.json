@@ -1,0 +1,27 @@
+{
+  "complainantName": "Ram Singh KUMAR VERMA",
+  "aadhaarUIDNo": "123456789011",
+  "bhamashahCardNo": "10901",
+  "genderId": 1,
+  "gender": "Male",
+  "parentName": "Suresh Singh",
+  "complainantAddress": "G-201 Delta",
+  "complainantMobile": "98000005",
+  "complainantEmail": "complainant@gmail.com",
+  "placeOfLoss": "Lal Kothi Jaipur",
+  "dateOfLoss": "2011-04-21",
+  "timeOfLoss": "10:30",
+  "anyOtherDetails": "Any other Details",
+  "articles": [
+    {
+      "lostArticleTypeId": 1,
+      "lostArticle": "PAN CARD",
+      "description": "Lost article description"
+    },
+    {
+      "lostArticleTypeId": 2,
+      "lostArticle": "ADHAR CARD",
+      "description": "Lost article description"
+    }
+  ]
+}

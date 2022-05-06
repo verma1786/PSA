@@ -6,6 +6,7 @@ import com.state.psa.community.repository.CLGMemberRepository;
 import com.state.psa.community.service.LoadMasterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -16,10 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+@PropertySource("classpath:/messages/business/uri.properties")
 @Service
 public class LoadMasterServiceImpl implements LoadMasterService {
-    @Value("${state.url}")
+    @Value("${get.states.url}")
     private String restUrl;
     @Autowired
     RestTemplate restTemplate;
@@ -30,8 +31,6 @@ public class LoadMasterServiceImpl implements LoadMasterService {
     @Override
     public State findById(Integer stateId){
         State responseEntity= restTemplate.getForObject("http://PSA-MASTER-SERVICE/psa-master/states/"+stateId, State.class);
-        System.out.println("-------------------------------------------"+responseEntity);
-        State state =new State(1,"India",6,"D");
         return responseEntity;
     }
 
@@ -48,6 +47,7 @@ public class LoadMasterServiceImpl implements LoadMasterService {
         List<State> states = responseEntity.getBody();
       return states;
     }
+
 
 
 }

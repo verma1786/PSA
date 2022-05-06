@@ -1,6 +1,6 @@
 package com.state.psa.lost.service.impl;
 
-import com.state.psa.lost.exception.ResourceNotFoundException;
+import com.state.psa.lost.common.exception.ResourceNotFoundException;
 import com.state.psa.lost.model.ComplainantDetail;
 import com.state.psa.lost.model.LostArticle;
 import com.state.psa.lost.repository.ComplainantRepository;
@@ -10,8 +10,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -42,15 +40,8 @@ public class ComplainantServiceImpl implements IComplainantService {
 
     @Override
     public ComplainantDetail save(ComplainantDetail complainantDetail) {
-        ComplainantDetail o =new ComplainantDetail();
-        o.setComplainantName("VINAY KUMAR");
-        LostArticle a=new LostArticle();
-        a.setArticleId(5L);
-        List<LostArticle> list=new ArrayList<>();
-        list.add(a);
-        o.setArticles(list);
-
-        return complainantRepository.save(o);
+          complainantDetail.getArticles().forEach(d -> d.setComplainantDetail(complainantDetail));
+          return complainantRepository.save(complainantDetail);
     }
 
     @Override

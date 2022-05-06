@@ -58,4 +58,9 @@ public class StateController {
         State state = (State) stateService.findById(stateId).orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + stateId));
         return ResponseEntity.ok().body(state);
     }
+
+    @GetMapping("/state/{stateId}")
+    public String getState(@PathVariable(value = "stateId") Integer stateId) {
+        return stateService.getState(stateId) ;
+    }
 }

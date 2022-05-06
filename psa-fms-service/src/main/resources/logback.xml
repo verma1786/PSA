@@ -14,7 +14,7 @@
 				it will delete old archived file -->
             <totalSizeCap>5MB</totalSizeCap>
             <!-- 60 days to keep -->
-            <!--            <maxHistory>60</maxHistory>-->
+            <maxHistory>60</maxHistory>
         </rollingPolicy>
 
         <encoder>

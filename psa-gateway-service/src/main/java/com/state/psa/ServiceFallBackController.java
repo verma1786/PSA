@@ -19,4 +19,9 @@ public class ServiceFallBackController {
     public String fileService() {
         return "file-service is down...";
     }
+
+    @GetMapping("testService")
+    public String testService() {
+        return "test-service is down...";
+    }
 }

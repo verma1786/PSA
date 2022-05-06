@@ -1,8 +1,9 @@
 package com.state.psa.lost.controller;
 
-import com.state.psa.lost.constants.Constants;
-import com.state.psa.lost.exception.ResourceNotFoundException;
-import com.state.psa.lost.model.ApiResponse;
+import com.state.psa.lost.common.constants.Constants;
+import com.state.psa.lost.common.exception.ResourceNotFoundException;
+import com.state.psa.lost.common.exception.ValidJson;
+import com.state.psa.lost.common.response.ApiResponse;
 import com.state.psa.lost.model.ComplainantDetail;
 import com.state.psa.lost.service.IComplainantService;
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import static com.state.psa.lost.SchemaLocations.COMPLAINANT;
 import java.util.List;
 
 /**
@@ -66,7 +67,7 @@ public class ComplainantController {
      */
 
     @PostMapping("/save")
-    public ResponseEntity<ApiResponse>  createComplainantDetail(@RequestBody ComplainantDetail complainantDetail) {
+    public ResponseEntity<ApiResponse>  createComplainantDetail(@ValidJson(COMPLAINANT) ComplainantDetail complainantDetail) {
         log.info("ComplainantController: createComplainantDetail ComplainantDetail {}",complainantDetail);
         ComplainantDetail compDetail= complainantService.save(complainantDetail);
         ApiResponse apiResponse = ApiResponse.builder()
