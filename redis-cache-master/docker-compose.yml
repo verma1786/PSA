@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  man:
+    build: .
+    image: redis-cache-maste:v1
+    mem_limit: 700m
+    ports:
+      - "9098:9098"

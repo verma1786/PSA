@@ -1,0 +1,389 @@
+2022-05-24 13:25:18,361 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [background-preinit] Trying to load META-INF/validation.xml for XML based Validator configuration.
+2022-05-24 13:25:18,369 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [background-preinit] Trying to load META-INF/validation.xml via TCCL
+2022-05-24 13:25:18,369 INFO com.state.fms.PsaFmsServiceApplication [main] Starting PsaFmsServiceApplication using Java 11.0.15 on SCRBPHQ-JAIPUR-PC12 with PID 630662 (/home/scrb/IntelliJIdea/PSA/psa-fms-service/target/classes started by scrb in /home/scrb/IntelliJIdea/PSA/psa-fms-service)
+2022-05-24 13:25:18,370 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [background-preinit] Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2022-05-24 13:25:18,371 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [background-preinit] No META-INF/validation.xml found. Using annotation based configuration only.
+2022-05-24 13:25:18,371 INFO com.state.fms.PsaFmsServiceApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-24 13:25:18,377 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers [background-preinit] Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2022-05-24 13:25:18,423 DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator [background-preinit] Loaded expression factory via original TCCL
+2022-05-24 13:25:18,603 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2022-05-24 13:25:18,613 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2022-05-24 13:25:18,614 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2022-05-24 13:25:18,614 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2022-05-24 13:25:18,614 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2022-05-24 13:25:18,614 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2022-05-24 13:25:19,288 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-24 13:25:19,484 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 190 ms. Found 2 MongoDB repository interfaces.
+2022-05-24 13:25:19,790 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=375b73f7-cf5b-3aa5-a3b4-a7fa546b26ad
+2022-05-24 13:25:20,176 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-05-24 13:25:20,184 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-24 13:25:20,185 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-24 13:25:20,364 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-24 13:25:20,364 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1918 ms
+2022-05-24 13:25:20,579 INFO org.mongodb.driver.cluster [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-24 13:25:20,649 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='628c8f68928dbf67ce0f5b5d', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+2022-05-24 13:25:20,649 INFO org.mongodb.driver.connection [cluster-ClusterId{value='628c8f68928dbf67ce0f5b5d', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2022-05-24 13:25:20,650 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='628c8f68928dbf67ce0f5b5d', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23701615}
+2022-05-24 13:25:20,704 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-24 13:25:20,831 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-24 13:25:21,012 DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator [main] Loaded expression factory via original TCCL
+2022-05-24 13:25:21,015 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2022-05-24 13:25:21,015 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2022-05-24 13:25:21,016 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2022-05-24 13:25:21,017 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [main] Trying to load META-INF/validation.xml for XML based Validator configuration.
+2022-05-24 13:25:21,017 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via user class loader
+2022-05-24 13:25:21,018 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via TCCL
+2022-05-24 13:25:21,018 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2022-05-24 13:25:21,018 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [main] No META-INF/validation.xml found. Using annotation based configuration only.
+2022-05-24 13:25:21,019 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers [main] Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2022-05-24 13:25:21,020 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2022-05-24 13:25:21,021 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2022-05-24 13:25:21,021 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2022-05-24 13:25:21,021 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2022-05-24 13:25:21,022 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2022-05-24 13:25:21,022 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2022-05-24 13:25:21,498 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-05-24 13:25:21,609 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-24 13:25:21,643 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-05-24 13:25:21,749 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-05-24 13:25:21,755 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-05-24 13:25:21,780 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-05-24 13:25:21,780 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-05-24 13:25:21,780 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-05-24 13:25:21,780 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-05-24 13:25:21,780 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-05-24 13:25:21,780 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-05-24 13:25:21,780 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-05-24 13:25:22,228 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-05-24 13:25:22,232 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-05-24 13:25:22,235 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-24 13:25:22,243 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1653378922242 with initial instances count: 5
+2022-05-24 13:25:22,245 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application PSA-FILE-SERVICE with eureka with status UP
+2022-05-24 13:25:22,246 INFO com.netflix.discovery.DiscoveryClient [main] Saw local status change event StatusChangeEvent [timestamp=1653378922246, current=UP, previous=STARTING]
+2022-05-24 13:25:22,249 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/SCRBPHQ-JAIPUR-PC12:PSA-FILE-SERVICE:8083: registering service...
+2022-05-24 13:25:22,276 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-05-24 13:25:22,277 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-05-24 13:25:22,294 INFO com.state.fms.PsaFmsServiceApplication [main] Started PsaFmsServiceApplication in 4.516 seconds (JVM running for 5.25)
+2022-05-24 13:25:22,304 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/SCRBPHQ-JAIPUR-PC12:PSA-FILE-SERVICE:8083 - registration status: 204
+2022-05-24 13:26:32,655 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8083-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-24 13:26:32,655 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-24 13:26:32,656 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-2] Completed initialization in 1 ms
+2022-05-24 13:26:32,752 INFO org.mongodb.driver.connection [http-nio-8083-exec-2] Opened connection [connectionId{localValue:3, serverValue:6}] to localhost:27017
+2022-05-24 13:30:21,783 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 13:35:21,784 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 13:40:21,786 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 13:45:21,787 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 13:50:21,788 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 13:55:21,789 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:00:21,790 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:05:21,790 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:10:21,791 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:15:21,792 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:20:21,793 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:21:41,859 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application PSA-FILE-SERVICE with eureka with status DOWN
+2022-05-24 14:21:41,860 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1653382301860, current=DOWN, previous=UP]
+2022-05-24 14:21:41,861 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/SCRBPHQ-JAIPUR-PC12:PSA-FILE-SERVICE:8083: registering service...
+2022-05-24 14:21:41,875 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/SCRBPHQ-JAIPUR-PC12:PSA-FILE-SERVICE:8083 - registration status: 204
+2022-05-24 14:21:41,896 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2022-05-24 14:21:45,858 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [background-preinit] Trying to load META-INF/validation.xml for XML based Validator configuration.
+2022-05-24 14:21:45,865 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [background-preinit] Trying to load META-INF/validation.xml via TCCL
+2022-05-24 14:21:45,865 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [background-preinit] Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2022-05-24 14:21:45,867 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [background-preinit] No META-INF/validation.xml found. Using annotation based configuration only.
+2022-05-24 14:21:45,873 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers [background-preinit] Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2022-05-24 14:21:45,889 INFO com.state.fms.PsaFmsServiceApplication [main] Starting PsaFmsServiceApplication using Java 11.0.15 on SCRBPHQ-JAIPUR-PC12 with PID 635090 (/home/scrb/IntelliJIdea/PSA/psa-fms-service/target/classes started by scrb in /home/scrb/IntelliJIdea/PSA/psa-fms-service)
+2022-05-24 14:21:45,904 INFO com.state.fms.PsaFmsServiceApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-24 14:21:45,927 DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator [background-preinit] Loaded expression factory via original TCCL
+2022-05-24 14:21:46,123 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2022-05-24 14:21:46,141 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2022-05-24 14:21:46,142 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2022-05-24 14:21:46,142 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2022-05-24 14:21:46,143 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2022-05-24 14:21:46,143 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2022-05-24 14:21:46,872 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-24 14:21:47,038 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 161 ms. Found 2 MongoDB repository interfaces.
+2022-05-24 14:21:47,300 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=375b73f7-cf5b-3aa5-a3b4-a7fa546b26ad
+2022-05-24 14:21:47,619 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-05-24 14:21:47,631 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-24 14:21:47,631 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-24 14:21:47,773 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-24 14:21:47,774 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1790 ms
+2022-05-24 14:21:47,967 INFO org.mongodb.driver.cluster [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-24 14:21:48,036 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='628c9ca3afa8775b4d1bf9b0', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2022-05-24 14:21:48,036 INFO org.mongodb.driver.connection [cluster-ClusterId{value='628c9ca3afa8775b4d1bf9b0', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2022-05-24 14:21:48,037 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='628c9ca3afa8775b4d1bf9b0', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22616876}
+2022-05-24 14:21:48,112 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-24 14:21:48,264 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-24 14:21:48,497 DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator [main] Loaded expression factory via original TCCL
+2022-05-24 14:21:48,501 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2022-05-24 14:21:48,501 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2022-05-24 14:21:48,502 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2022-05-24 14:21:48,503 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [main] Trying to load META-INF/validation.xml for XML based Validator configuration.
+2022-05-24 14:21:48,503 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via user class loader
+2022-05-24 14:21:48,503 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via TCCL
+2022-05-24 14:21:48,503 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2022-05-24 14:21:48,504 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [main] No META-INF/validation.xml found. Using annotation based configuration only.
+2022-05-24 14:21:48,504 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers [main] Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2022-05-24 14:21:48,506 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2022-05-24 14:21:48,507 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2022-05-24 14:21:48,507 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2022-05-24 14:21:48,507 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2022-05-24 14:21:48,507 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2022-05-24 14:21:48,507 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2022-05-24 14:21:48,998 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-05-24 14:21:49,110 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-24 14:21:49,135 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-05-24 14:21:49,258 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-05-24 14:21:49,265 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-05-24 14:21:49,292 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-05-24 14:21:49,292 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-05-24 14:21:49,292 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-05-24 14:21:49,292 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-05-24 14:21:49,292 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-05-24 14:21:49,292 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-05-24 14:21:49,292 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-05-24 14:21:49,716 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-05-24 14:21:49,720 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-05-24 14:21:49,723 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-24 14:21:49,732 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1653382309731 with initial instances count: 5
+2022-05-24 14:21:49,734 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application PSA-FILE-SERVICE with eureka with status UP
+2022-05-24 14:21:49,735 INFO com.netflix.discovery.DiscoveryClient [main] Saw local status change event StatusChangeEvent [timestamp=1653382309735, current=UP, previous=STARTING]
+2022-05-24 14:21:49,738 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/172.22.94.49:PSA-FILE-SERVICE:8083: registering service...
+2022-05-24 14:21:49,772 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-05-24 14:21:49,773 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-05-24 14:21:49,794 INFO com.state.fms.PsaFmsServiceApplication [main] Started PsaFmsServiceApplication in 4.666 seconds (JVM running for 5.34)
+2022-05-24 14:21:49,801 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/172.22.94.49:PSA-FILE-SERVICE:8083 - registration status: 204
+2022-05-24 14:22:55,491 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-172.22.94.49-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-24 14:22:55,492 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-172.22.94.49-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-24 14:22:55,493 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-172.22.94.49-8083-exec-1] Completed initialization in 1 ms
+2022-05-24 14:22:55,564 INFO org.mongodb.driver.connection [http-nio-172.22.94.49-8083-exec-1] Opened connection [connectionId{localValue:3, serverValue:9}] to localhost:27017
+2022-05-24 14:26:49,295 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:31:49,296 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:36:49,297 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:41:49,298 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:46:49,299 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:51:49,300 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 14:56:49,301 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:01:49,302 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:06:49,304 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:11:49,304 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:16:49,305 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:21:49,306 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:26:49,307 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:31:49,307 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:36:49,308 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:41:49,309 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:46:49,310 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:51:21,517 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-0] task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-24 15:51:21,559 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-1] task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-24 15:51:49,311 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 15:52:51,519 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-0] task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-24 15:52:51,560 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-1] task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-24 15:56:49,312 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:01:49,312 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:06:49,313 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:11:49,314 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:16:49,315 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:21:49,315 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:26:49,316 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:31:49,317 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:36:49,318 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:41:49,318 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:46:49,319 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:51:49,320 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 16:56:49,320 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:01:49,321 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:06:49,322 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:11:49,322 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:16:49,323 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:19:52,852 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application PSA-FILE-SERVICE with eureka with status DOWN
+2022-05-24 17:19:52,853 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1653392992853, current=DOWN, previous=UP]
+2022-05-24 17:19:52,853 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/172.22.94.49:PSA-FILE-SERVICE:8083: registering service...
+2022-05-24 17:19:52,864 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/172.22.94.49:PSA-FILE-SERVICE:8083 - registration status: 204
+2022-05-24 17:19:52,910 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2022-05-24 17:19:58,363 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [background-preinit] Trying to load META-INF/validation.xml for XML based Validator configuration.
+2022-05-24 17:19:58,362 INFO com.state.fms.PsaFmsServiceApplication [main] Starting PsaFmsServiceApplication using Java 11.0.15 on SCRBPHQ-JAIPUR-PC12 with PID 644349 (/home/scrb/IntelliJIdea/PSA/psa-fms-service/target/classes started by scrb in /home/scrb/IntelliJIdea/PSA/psa-fms-service)
+2022-05-24 17:19:58,370 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [background-preinit] Trying to load META-INF/validation.xml via TCCL
+2022-05-24 17:19:58,371 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [background-preinit] Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2022-05-24 17:19:58,372 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [background-preinit] No META-INF/validation.xml found. Using annotation based configuration only.
+2022-05-24 17:19:58,371 INFO com.state.fms.PsaFmsServiceApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-24 17:19:58,378 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers [background-preinit] Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2022-05-24 17:19:58,450 DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator [background-preinit] Loaded expression factory via original TCCL
+2022-05-24 17:19:58,658 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2022-05-24 17:19:58,666 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2022-05-24 17:19:58,666 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2022-05-24 17:19:58,667 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2022-05-24 17:19:58,667 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2022-05-24 17:19:58,667 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [background-preinit] HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2022-05-24 17:19:59,270 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-24 17:19:59,423 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 147 ms. Found 2 MongoDB repository interfaces.
+2022-05-24 17:19:59,747 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=375b73f7-cf5b-3aa5-a3b4-a7fa546b26ad
+2022-05-24 17:20:00,071 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-05-24 17:20:00,081 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-05-24 17:20:00,082 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-24 17:20:00,243 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-05-24 17:20:00,244 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1717 ms
+2022-05-24 17:20:00,418 INFO org.mongodb.driver.cluster [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-24 17:20:00,490 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='628cc6680c3b4e13197ce1d3', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:10}] to localhost:27017
+2022-05-24 17:20:00,490 INFO org.mongodb.driver.connection [cluster-ClusterId{value='628cc6680c3b4e13197ce1d3', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:11}] to localhost:27017
+2022-05-24 17:20:00,491 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='628cc6680c3b4e13197ce1d3', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20331016}
+2022-05-24 17:20:00,567 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-24 17:20:00,688 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-24 17:20:00,866 DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator [main] Loaded expression factory via original TCCL
+2022-05-24 17:20:00,869 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2022-05-24 17:20:00,870 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2022-05-24 17:20:00,870 DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl [main] Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2022-05-24 17:20:00,872 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [main] Trying to load META-INF/validation.xml for XML based Validator configuration.
+2022-05-24 17:20:00,872 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via user class loader
+2022-05-24 17:20:00,872 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via TCCL
+2022-05-24 17:20:00,872 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper [main] Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2022-05-24 17:20:00,873 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser [main] No META-INF/validation.xml found. Using annotation based configuration only.
+2022-05-24 17:20:00,873 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers [main] Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2022-05-24 17:20:00,875 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2022-05-24 17:20:00,875 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2022-05-24 17:20:00,876 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2022-05-24 17:20:00,876 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2022-05-24 17:20:00,876 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2022-05-24 17:20:00,876 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper [main] HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2022-05-24 17:20:01,386 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-05-24 17:20:01,557 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-24 17:20:01,589 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-05-24 17:20:01,695 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-05-24 17:20:01,701 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-05-24 17:20:01,726 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-05-24 17:20:01,726 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-05-24 17:20:01,726 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-05-24 17:20:01,726 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-05-24 17:20:01,726 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-05-24 17:20:01,727 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-05-24 17:20:01,727 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-05-24 17:20:02,159 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-05-24 17:20:02,163 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-05-24 17:20:02,166 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-24 17:20:02,173 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1653393002171 with initial instances count: 6
+2022-05-24 17:20:02,175 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application PSA-FILE-SERVICE with eureka with status UP
+2022-05-24 17:20:02,175 INFO com.netflix.discovery.DiscoveryClient [main] Saw local status change event StatusChangeEvent [timestamp=1653393002175, current=UP, previous=STARTING]
+2022-05-24 17:20:02,177 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/172.22.94.49:PSA-FILE-SERVICE:8083: registering service...
+2022-05-24 17:20:02,208 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-05-24 17:20:02,210 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-05-24 17:20:02,239 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PSA-FILE-SERVICE/172.22.94.49:PSA-FILE-SERVICE:8083 - registration status: 204
+2022-05-24 17:20:02,254 INFO com.state.fms.PsaFmsServiceApplication [main] Started PsaFmsServiceApplication in 4.554 seconds (JVM running for 5.322)
+2022-05-24 17:23:19,090 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-172.22.94.49-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-24 17:23:19,091 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-172.22.94.49-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-24 17:23:19,092 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-172.22.94.49-8083-exec-1] Completed initialization in 1 ms
+2022-05-24 17:23:19,194 INFO org.mongodb.driver.connection [http-nio-172.22.94.49-8083-exec-1] Opened connection [connectionId{localValue:3, serverValue:12}] to localhost:27017
+2022-05-24 17:25:01,729 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:26:57,819 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-172.22.94.49-8083-exec-4] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'file' is not present]
+2022-05-24 17:30:01,730 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:35:01,731 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:40:01,732 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:45:01,733 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:50:01,734 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 17:55:01,734 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:00:01,735 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:05:01,736 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:10:01,737 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:15:01,738 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:20:01,739 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:25:01,740 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:30:01,740 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:35:01,741 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:40:01,742 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:45:01,743 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:50:01,744 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 18:55:01,745 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:00:01,746 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:05:01,746 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:10:01,747 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:15:01,749 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:20:01,750 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:25:01,751 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:30:01,752 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:35:01,752 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:40:01,753 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:45:01,755 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:50:01,756 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 19:55:01,757 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:00:01,758 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:05:01,759 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:10:01,760 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:15:01,761 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:20:01,761 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:25:01,762 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:30:01,763 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:35:01,764 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:40:01,765 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:45:01,765 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:50:01,766 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 20:55:01,767 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:00:01,768 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:05:01,769 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:10:01,770 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:15:01,770 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:20:01,771 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:25:01,772 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:30:01,773 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:35:01,773 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:40:01,774 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:45:01,775 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:50:01,776 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 21:55:01,776 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:00:01,777 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:05:01,778 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:10:01,779 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:15:01,780 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:20:01,780 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:25:01,781 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:30:01,782 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:35:01,783 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:40:01,783 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:45:01,784 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:50:01,785 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 22:55:01,786 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:00:01,787 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:05:01,788 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:10:01,788 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:15:01,789 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:20:01,789 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:25:01,790 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:30:01,791 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:35:01,792 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:40:01,793 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:45:01,794 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:50:01,795 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-24 23:55:01,795 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
